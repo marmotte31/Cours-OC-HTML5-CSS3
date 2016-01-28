@@ -1,0 +1,57 @@
+@font-face { /* Définition d'une nouvelle police nommée AleoRegular : http://www.fontsquirrel.com/fonts/aleo   */
+    font-family: 'AleoRegular';
+    src: url('Aleo-Regular-webfont.eot');
+    src: url('Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Aleo-Regular-webfont.woff') format('woff'),
+    url('Aleo-Regular-webfont.ttf') format('truetype'),
+    url('Aleo-Regular-webfont.svg#AleoRegular') format('svg');
+}
+
+body {
+    background: url("grey-snow-md.png") repeat;
+    font-family: AleoRegular, "Times New Roman", serif;
+}
+
+.presentation_brief {
+    text-align: center;
+}
+
+#photocv_mini {
+    box-shadow: 6px 6px 6px black;
+    float: right;
+}
+
+a {
+    color: red;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+p {
+    color:dimgrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-left: 50px;
+    color: red;
+    background: url("ball-sm.png") no-repeat top left;
+    border-left: 2px solid maroon;
+    border-bottom: 2px solid maroon;
+    }
