@@ -7,12 +7,44 @@
     url('Aleo-Regular-webfont.svg#AleoRegular') format('svg');
 }
 
+* {
+    background-color: transparent;
+}
+
 body {
     background: url("grey-snow-md.png") repeat;
     font-family: AleoRegular, "Times New Roman", serif;
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+}
+
+#bloc_page
+{
+    margin-left: 10px;
+    width: 900px;
+    flex: auto;
+}
+
+#liseret
+{
+    background: url("liseret.png") no-repeat;
+    width: 10%;
+    height: 700px;
+    max-width: 100px;
+    max-height: 700px;
+    border-radius: 15px;
+}
+
+/* Header */
+header
+{
+    display: flex;
+    justify-content: space-between;
 }
 
 .presentation_brief {
+    flex: auto;
     text-align: center;
 }
 
@@ -20,6 +52,28 @@ body {
     box-shadow: 6px 6px 6px black;
     float: right;
 }
+
+section
+{
+    display: flex;
+    flex-direction: row;
+}
+
+article:nth-child(1)
+{
+   flex: 1.5;
+}
+
+article:nth-child(2)
+{
+    flex: 1.5;
+}
+
+article:nth-child(3)
+{
+    flex: 1.5;
+}
+
 
 a {
     color: red;
@@ -49,9 +103,21 @@ h1 {
 }
 
 h2 {
+    margin-right: 50px;
     padding-left: 50px;
     color: red;
     background: url("ball-sm.png") no-repeat top left;
     border-left: 2px solid maroon;
     border-bottom: 2px solid maroon;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1024px) {
+	#liseret{
+		display: none;
+	}
+	
+	section {
+        flex-direction: column;
     }
+}

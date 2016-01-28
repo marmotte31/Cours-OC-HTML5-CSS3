@@ -8,34 +8,64 @@
 
     <body>
 
-        <div class="presentation_brief">
-        <a href="photocv.jpg"><img src="photocv_mini.jpg" alt="Ma photo" title="Cliquez pour agrandir" id="photocv_mini" /></a>
-        <h1>Serge Marmotte</h1>
-        <p >Autodidacte, Administrateur Système & Réseau<br /></p>
+        <!-- test en SVG pour le fun ;) mais impossible d'arrondir les bord ! :(
+        <div id="liseret">
+            <svg width="100" height="800">
+                <defs>
+                    <linearGradient id="rouge-blanc" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF0008; stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:#FFFFFF; stop-opacity:1"/>
+                    </linearGradient>
+                </defs>
+                <rect x="2" y="10" width="100" height="800" style=" fill:url(#rouge-blanc); " />
+            </svg>
+        </div>
+        -->
+
+        <div id="liseret">
+
         </div>
 
+        <div id="bloc_page">
 
-        <h2>Mon Expérience</h2>
-        <ul>
-            <li><strong>2003 à 2004</strong> : GFI Informatique (pour le client EDF/GDF), Assistance technique par téléphone (24h/24h, 7j/7) pour gestion du parc informatique.</li>
-            <li><strong>2005 à 2006</strong> : Sogeti-Transiciel (pour le client Airbus), Assistance par téléphone pour support technique des utilisateurs du système informatique.</li>
-            <li><strong>2006 à 2016</strong> : Leoni, Administrateur Système & Réseau.</li>
-        </ul>
+            <header>
+                <div class="presentation_brief">
+                    <h1>Serge Marmotte</h1>
+                    <p>Autodidacte, Administrateur Système & Réseau</p>
+                </div>
+                <a href="photocv.jpg"><img src="photocv_mini.jpg" alt="Ma photo" title="Cliquez pour agrandir" id="photocv_mini" /></a>
+            </header>
 
-        <h2>Mes Compétences</h2>
-        <ul>
-            <li>OS : Windows, Linux</li>
-            <li>Java : <a href="https://openclassrooms.com/courses/developpez-des-sites-web-avec-java-ee">(Certificat OpenClassrooms)</a></li>
-            <li>SQL</li>
-            <li>Jeux video en tout genre :)</li>
-        </ul>
+            <section>
+                <article>
+                    <h2>Mon Expérience</h2>
+                    <ul>
+                        <li><strong>2003 à 2004</strong> : GFI Informatique (pour le client EDF/GDF), Assistance technique par téléphone (24h/24h, 7j/7) pour gestion du parc informatique.</li>
+                        <li><strong>2005 à 2006</strong> : Sogeti-Transiciel (pour le client Airbus), Assistance par téléphone pour support technique des utilisateurs du système informatique.</li>
+                        <li><strong>2006 à 2016</strong> : Leoni, Administrateur Système & Réseau.</li>
+                    </ul>
+                </article>
 
-        <h2>Ma Formation</h2>
-        <ul>
-            <li><strong>1998</strong> : Diplôme BAC, Cachan.</li>
-            <li><strong>2002</strong> : Diplôme BTS Génie électronique, Châtenay-Malabry.</li>
-            <li><strong>2004</strong> : Diplôme Licence GRI, Courbevoie.</li>
-        </ul>
+                <article>
+                    <h2>Mes Compétences</h2>
+                    <ul>
+                        <li>OS : Windows, Linux</li>
+                        <li>Java : <a href="https://openclassrooms.com/courses/developpez-des-sites-web-avec-java-ee">(Certificat OpenClassrooms)</a></li>
+                        <li>SQL</li>
+                        <li>Jeux video en tout genre :)</li>
+                    </ul>
+                </article>
 
+                <article>
+                    <h2>Ma Formation</h2>
+                    <ul>
+                        <li><strong>1998</strong> : Diplôme BAC, Cachan.</li>
+                        <li><strong>2002</strong> : Diplôme BTS Génie électronique, Châtenay-Malabry.</li>
+                        <li><strong>2004</strong> : Diplôme Licence GRI, Courbevoie.</li>
+                    </ul>
+                </article>
+            </section>
+
+        </div>
     </body>
 </html>
